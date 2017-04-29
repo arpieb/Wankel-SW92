@@ -1,0 +1,74 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 04/23/07 by TIR38
+' ******************************************************************************
+
+Dim swApp As Object
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long
+Dim Annotation As Object
+Dim Gtol As Object
+Dim DatumTag As Object
+Dim FeatureData As Object
+Dim Feature As Object
+Dim Component As Object
+Sub main()
+Set swApp = CreateObject ("SldWorks.Application")
+Set Part = swApp.OpenDoc4 ("C:\Documents and Settings\TIR38\Desktop\Wankel\1.zylinder\1.zylinder_finished.SLDPRT", 1, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("1.zylinder_finished.SLDPRT")
+swApp.ActiveDoc.ActiveView.FrameLeft = 0
+swApp.ActiveDoc.ActiveView.FrameTop = 0
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+Part.ViewDisplayHiddenremoved
+Part.ViewDisplayShaded
+Part.ActiveView().RotateAboutCenter 0.0070863, 0
+Part.ActiveView().RotateAboutCenter 0.170071, -0.242488
+Part.ActiveView().RotateAboutCenter 0.32597, -0.418083
+Part.ActiveView().RotateAboutCenter 0.120467, -0.275935
+Part.ActiveView().RotateAboutCenter 0.0141726, -0.217403
+Part.ActiveView().RotateAboutCenter -0.148812, -0.501699
+Part.ActiveView().RotateAboutCenter -0.106294, -0.125425
+Part.ActiveView().RotateAboutCenter -0.070863, -0.0919782
+Part.ActiveView().RotateAboutCenter -0.0921219, -0.167233
+Part.ActiveView().RotateAboutCenter -0.0921219, -0.242488
+Part.ActiveView().RotateAboutCenter -0.0566904, -0.259211
+Part.ActiveView().RotateAboutCenter -0.0425178, -0.275935
+Part.ActiveView().RotateAboutCenter -0.0283452, -0.10034
+Part.ActiveView().RotateAboutCenter 0, -0.0752549
+Part.ActiveView().RotateAboutCenter -0.0070863, 0
+Part.ActiveView().RotateAboutCenter 0.0070863, -0.00836165
+Part.ActiveView().RotateAboutCenter 0.127553, -0.518423
+Part.ActiveView().RotateAboutCenter 0.113381, -0.526784
+Part.ActiveView().RotateAboutCenter 0.070863, -0.25085
+Part.ActiveView().RotateAboutCenter 0, -0.133786
+Part.ActiveView().RotateAboutCenter -0.0354315, -0.292658
+Part.ActiveView().RotateAboutCenter -0.19133, -0.493338
+Part.ActiveView().RotateAboutCenter -0.127553, -0.426444
+Part.ActiveView().RotateAboutCenter -0.0921219, -0.234126
+Part.ActiveView().RotateAboutCenter -0.0637767, -0.15051
+Part.ActiveView().RotateAboutCenter -0.0354315, -0.142148
+Part.ActiveView().RotateAboutCenter -0.0141726, -0.15051
+Part.ActiveView().RotateAboutCenter 0, -0.225765
+Part.ActiveView().RotateAboutCenter 0.0141726, -0.183956
+Part.ActiveView().RotateAboutCenter 0, -0.125425
+Part.ActiveView().RotateAboutCenter 0, -0.0919782
+Part.ActiveView().RotateAboutCenter 0, -0.0585316
+Part.ActiveView().RotateAboutCenter 0, -0.00836165
+Part.ActiveView().RotateAboutCenter -0.0070863, 0
+Part.SelectByID "1.zylinder_finished.SLDPRT", "COMPONENT", 0, 0, 0
+Part.Save2 FALSE
+Part.SelectByID "1.zylinder_finished.SLDPRT", "COMPONENT", 0, 0, 0
+Part.ClearSelection
+Set Part = Nothing
+swApp.CloseDoc "1.zylinder_finished.SLDPRT"
+swApp.AppAbout
+Set Part = swApp.OpenDoc4 ("C:\Documents and Settings\TIR38\Desktop\Wankel\1.zylinder\1.zylinder_finished.SLDPRT", 1, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("1.zylinder_finished.SLDPRT")
+swApp.ActiveDoc.ActiveView.FrameLeft = 0
+swApp.ActiveDoc.ActiveView.FrameTop = 0
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ExitApp
+End Sub

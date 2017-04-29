@@ -1,0 +1,23 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 04/26/07 by TIR38
+' ******************************************************************************
+
+Dim swApp As Object
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long
+Dim Annotation As Object
+Dim Gtol As Object
+Dim DatumTag As Object
+Dim FeatureData As Object
+Dim Feature As Object
+Dim Component As Object
+Sub main()
+Set swApp = CreateObject ("SldWorks.Application")
+Set Part = swApp.OpenDoc4 ("C:\Documents and Settings\TIR38\Desktop\Wankel\1.zylinder\1.zylinder_finished.SLDDRW", 3, 0, "", longstatus)
+' MSGBOX
+' Cannot open C:\Documents and Settings\TIR38\Desktop\Wankel\1.zylinder\1.zylinder_finished.SLDDRW.
+' The system could not recognize this file.
+
+swApp.ExitApp
+End Sub
