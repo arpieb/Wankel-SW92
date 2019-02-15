@@ -8,4 +8,4 @@ but due to copyright concerns I am not comfortable placing a scanned copy of the
 Since my plans for the SW-92 were scrapped, I have decided that other engineering geeks might be interested in the model 
 in modern CAD format (as opposed to the original hand-drafted plats).  I hope someone finds it useful!
 
-As of Aug 21, 2017. it appears that the [project site](https://jasonatwood.io/archives/73) is still alive, and still getting comments!
+As of Aug 21, 2017, it appears that the [project site](https://jasonatwood.io/archives/73) is still alive, and still getting comments!
